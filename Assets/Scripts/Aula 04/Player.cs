@@ -1,18 +1,15 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class Player
+public class Player : Personagem
 {
-    private string nome;
-    private int vida;
     private List<Arma3> armas = new List<Arma3>();
     private Armadura armadura;
     private Escudo escudo;
 
-    public Player (string nome, int vida)
+    public Player (string nome, int vida) : base(nome, vida)
     {
-        this.nome = nome;
-        this.vida = vida;
+
     }
 
     public void SetNome(string nome)

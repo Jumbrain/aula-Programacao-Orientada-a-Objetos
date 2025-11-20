@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class Player : Personagem
 {
-    private List<Arma3> armas = new List<Arma3>();
+    private List<Armas> armas = new List<Armas>();
     private Armadura armadura;
     private Escudo escudo;
 
@@ -22,12 +22,12 @@ public class Player : Personagem
         return nome;
     }
 
-    public void SetArma(Arma3 arma)
+    public void SetArma(Armas arma)
     {
         armas.Add(arma);
     }
 
-    public List<Arma3> GetArmas()
+    public List<Armas> GetArmas()
     {
         return armas;
     }
